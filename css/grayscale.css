@@ -2,6 +2,9 @@
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*
+* Le thème bootstrap Grayscale est ici utilisé pour l'affichage de la page d'accueil du site.
+*
  */
 
 body {
@@ -370,4 +373,15 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+/*
+* Surcharge du thème pour affichage dans la bootbox
+*/
+.modal-content * {
+    color: black !important;
+}
+
+div#form-login {
+    display: none;
 }

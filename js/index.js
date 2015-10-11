@@ -4,14 +4,24 @@
  * and open the template in the editor.
  */
 
-/*
-$(document).ready(function () {
-    $("a#btn-start-login").click(function () {
-       bootbox.dialog({
-           title: "Connectez-vous",
-           message:$("dialogForm").html()
-       }); 
+$(function () {
+    $('a#btn-start-login').click(function () {
+
+        var html = $('div#form-login').html();
+
+        bootbox.dialog({
+            title: "Connexion à la plateforme",
+            message: html,
+            buttons: {
+                main: {
+                    label: "Conexion",
+                    className: "btn-primary",
+                    callback: function () {
+                        bootbox.alert("C'est parti !")
+                    }
+                }
+            }
+        });
+
     });
 });
-
-*/

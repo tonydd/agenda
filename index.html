@@ -114,28 +114,26 @@
         </footer>
 
         <!-- The login modal. Don't display it initially. -->
-        <form id="loginForm" method="post" class="form-horizontal" style="display: none;">
-            <div class="form-group">
-                <label class="col-xs-3 control-label">Utilisateur</label>
-                <div class="col-xs-5">
-                    <input type="text" class="form-control" name="username" />
+        <div id="form-login">
+            <div class="row">  
+                <div class="col-md-12"> 
+                    <form class="form-horizontal"> 
+                        <div class="form-group"> 
+                            <label for="login" class="col-md-4 control-label">Login</label> 
+                            <div class="col-md-4"> 
+                                <input type="text" class="form-control input-md" placeholder="Votre login" name="login" id="login"> 
+                            </div> 
+                        </div>
+                        <div class="form-group"> 
+                            <label for="password" class="col-md-4 control-label">Mot de passe</label>
+                            <div class="col-md-4"> 
+                                <input type="text" class="form-control input-md" placeholder="Votre mot de passe" name="password" id="password"> 
+                            </div> 
+                        </div>
+                    </form>
                 </div>
             </div>
-
-            <div class="form-group">
-                <label class="col-xs-3 control-label">Mot de passe</label>
-                <div class="col-xs-5">
-                    <input type="password" class="form-control" name="password" />
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-xs-5 col-xs-offset-3">
-                    <button type="submit" class="btn btn-default">Login</button>
-                </div>
-            </div>
-        </form>
-
+        </div>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
@@ -147,16 +145,16 @@
         <script src="js/jquery.easing.min.js"></script>
 
         <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+        <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
 
         <!-- Custom Theme JavaScript -->
         <script src="js/grayscale.js"></script>
 
-        <!-- Bootbox -->
-        <script src="js/bootbox.min.js"></script>
+        <!-- Chargement de Bootbox via CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
 
         <!-- JS page d'accueil-->
-        <script src='js/index.js'></script>
+        <script src='js/index.js'></script>    
     </body>
 
 </html>
